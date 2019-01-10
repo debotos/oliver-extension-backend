@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     # Third-party
 
     # Local
-    'myproject.core'
+
 ]
 
 MIDDLEWARE = [
