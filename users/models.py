@@ -52,8 +52,10 @@ class CustomUser(AbstractBaseUser):
     date_joined = models.DateTimeField(auto_now_add=True)
     last_login = models.DateTimeField(auto_now=True)
 
+    count = models.PositiveSmallIntegerField(default=0, help_text='Total amount of screenshot till now',
+                                             verbose_name='Total Screenshot')
     # Token or Credit Field
-    credit = models.PositiveSmallIntegerField(default=0, help_text='Amount of credit/token user have')
+    credit = models.PositiveSmallIntegerField(default=0, help_text='Amount of credit/token user have', )
 
     objects = CustomUserManager()
 
